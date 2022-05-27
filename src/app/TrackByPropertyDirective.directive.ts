@@ -11,7 +11,6 @@ export class TrackByPropertyDirective {
  private propertyName: string;
   public constructor(@Host() private readonly ngFor: NgForOf<any>) {
       this.ngFor.ngForTrackBy = (index: number, item: any) => this.propertyName ? item[this.propertyName] : item;
-      debugger
   }
 
   @Input("ngForTrackByProperty")
