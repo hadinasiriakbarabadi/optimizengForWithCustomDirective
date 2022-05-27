@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let player of team;trackByProperty: 'name'">
+     {{ player.name }}
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
